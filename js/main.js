@@ -47,10 +47,10 @@ for (let i = 0; i < team.length; i++){
     let tuttiRuolo = tutti.ruolo;
     let tuttiImg = tutti.img;
     console.log("Nome:", tutti.nome,"Ruolo", tutti.ruolo,"Img:", tutti.img);
-    container.innerHTML = `<div>Nome: $(tutti.nome), Ruolo: $(tutti.ruolo), Img: $(tutti.img)</div>`;
+    container.innerHTML += `<div>Nome: ${tutti.nome}, Ruolo: ${tutti.ruolo}, Img: ${tutti.img}</div>`;
 };
 
-document.getElementById("WB").innerHTML = `team[i].nome`;
+
 
 // const team = {
 //     "nome" : ["Wayne Barnett", "Angela Caroll","Walter Gordon","Angela Lopez","Scott Estrada","Barbara Ramos"],
