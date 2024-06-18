@@ -38,9 +38,12 @@ const team = [
 
 // stampo su console con un ciclo per tutta la lunghezza dell'array
 for (let i = 0; i < team.length; i++){
-    let tutti = team[i];
-    let info = document.createElement(`div`);
-    
+    console.log(team[i].nome);
+    console.log(team[i].ruolo);
+    console.log(team[i].img);
+    // let tutti = team[i];
+    // let info = document.createElement(`div`);
+
 }
 
 // const team = {
