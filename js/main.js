@@ -1,4 +1,5 @@
 // creo l'array di oggetti 
+const container = document.getElementById("containerStampa");
 
 const team = [
     {
@@ -36,7 +37,7 @@ const team = [
     },
 ]
 
-const container = document.getElementById("containerStampa");
+
 
 // stampo su console con un ciclo per tutta la lunghezza dell'array
 for (let i = 0; i < team.length; i++){
@@ -46,7 +47,8 @@ for (let i = 0; i < team.length; i++){
     let tuttiRuolo = tutti.ruolo;
     let tuttiImg = tutti.img;
     console.log("Nome:", tutti.nome,"Ruolo", tutti.ruolo,"Img:", tutti.img);
-}
+    container.innerHTML = `<div>Nome: $(tutti.nome), Ruolo: $(tutti.ruolo), Img: $(tutti.img)</div>`;
+};
 
 document.getElementById("WB").innerHTML = `team[i].nome`;
 
